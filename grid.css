@@ -1,0 +1,145 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --verydark-cyan: hsl(179, 100%, 13%);
+
+    --clr-text: hsla(0, 0%, 100%, 0.75);
+    --verylight-gray: hsl(0, 0%, 95%);
+
+    --ff-serif: "Lexend Deca", serif;
+    --ff-sans:"Big Shoulders Display", sans-serif;
+
+    --fs-700: 1.8rem;
+    --fs-400: 0.9375rem;
+}
+
+body, h1, h2, h3, h4, h5, p, img{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--verylight-gray);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.ff-serif{
+    font-family: var(--ff-serif);
+    font-size: 400;
+}
+.ff-sans{
+    font-family: var(--ff-sans);
+    font-size: 700;
+}
+
+.bright-orange{
+    color: var(--bright-orange);
+}
+.dark-cyan{
+    color: var(--dark-cyan);
+}
+.verydark-cyan{
+    color: var(--verydark-cyan);
+}
+
+.d-block{
+    display: block;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 80%;
+    font-family: var(--ff-serif);
+    font-size: var(--fs-400);
+    color: var(--verylight-gray);
+    line-height: 1.8;
+    margin: 10% auto;
+    border-radius: .3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+section{
+    padding: 6%;
+}
+
+section *{
+    margin-top: 10px;
+}
+
+section a{
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--clr-text);
+    font-size: 1rem;
+    max-width: 40%;
+    padding: .5em;
+    margin-top: 10px;
+    align-self: end;
+}
+
+section a:hover, 
+section a:focus{
+    background: transparent;
+    text-decoration: none;
+    border:1px solid var(--verylight-gray);
+    color: var(--clr-text);
+}
+
+@media (mix-width: 800px){
+    :root{
+        --fs-400: 1.125rem;
+        --fs-700: 3.5rem;
+    }
+
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    section a{
+        border-radius: 35px;
+        font-size: 1rem;
+        max-width: 40%;
+        margin: .9rem 0;
+        padding: 15px 0;
+    }
+}
+
+
+@media (min-width: 600px){
+    :root{
+        --fs-400: 1rem;
+        --fs-700: 2.75rem;
+    }
+
+    main{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    section a{
+        border-radius: 45px;
+        font-size: 1rem;
+        max-width: 70%;
+        margin: 3em 0;
+        padding: 0;
+    }
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
