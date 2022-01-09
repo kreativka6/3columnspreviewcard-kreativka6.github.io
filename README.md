@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/kreativka6/kreativka6.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="grid.css">
+  <title>Frontend Mentor | 3-column preview card component</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kreativka6/kreativka6.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</head>
+<body>
+  <main>
+    <section style="background-color: var(--bright-orange);">
+       <div>
+          <img src="images/icon-sedans.svg" alt="sedans" >
+       </div>
+       <h1 class="uppercase ff-sans ">Sedans</h1>
+       <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <a href="#" class="dark-cyan ff-serif d-block">Learn more</a>
+    </section>
+    <section style="background-color: var(--dark-cyan);">
+       <div>
+         <img src="images/icon-suvs.svg" alt="suvs">
+       </div>
+       <h1 class="uppercase ff-sans">SUVs</h1>
+       <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+  <a href="#" class="dark-cyan ff-serif d-block">Learn more</a>
+   </section>
+<section style="background-color: var(--verydark-cyan);">
+  <div>
+    <img src="images/icon-luxury.svg" alt="luxury">
+  </div>
+<h1 class="uppercase ff-sans">Luxury</h1>
+  <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+  <a href="#" class="dark-cyan ff-serif d-block">Learn more</a>
+  </section>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">kreativka6</a>.
+  </div>
+</body>
+</html>
